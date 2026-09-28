@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Dhruv tweet project
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome to my Tweet Django Project</h1>
+
+    <h2>
+        {% if form.instance.pk %}
+        Edit Tweet
+        {% else %}
+        Create Tweet
+        {% endif %}
+
+        <form method="POST" enctype="multipart/form-data" class="form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-warning" type="submit">Submit</button>
+        </form>
+        <a href="{% url 'list-all' %}">Back to Tweet List</a>
+    </h2>
+{% endblock %}

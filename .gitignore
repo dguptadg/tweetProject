@@ -1,0 +1,29 @@
+# Virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Django database
+db.sqlite3
+
+# User uploaded media
+media/
+
+# Environment variables
+.env
+.env.*
+
+# Collected static files
+staticfiles/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+tweet/tweet/settings.py

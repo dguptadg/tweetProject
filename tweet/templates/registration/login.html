@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Dhruv tweet project
+{% endblock %}
+
+{% block content %}
+    <h1>Welcome to my Tweet Django Project</h1>
+
+    <h2>Let's get you Logged In!</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+
+        <button class="btn btn-primary" type="submit">Log In</button>
+    </form>
+    <p>Don't have an account? <a href="{% url 'register' %}">Register Here</a></p>
+{% endblock %}
