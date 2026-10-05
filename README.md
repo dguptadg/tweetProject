@@ -83,10 +83,6 @@ tweet/
 - Database migrations
 - CRUD operations
 
-## Repository Note
-
-Sensitive configuration files and local development files are intentionally excluded from GitHub through `.gitignore`, including the virtual environment, local database, media uploads, and private settings.
-
 ## Future Improvements
 
 - Improve UI and responsive design
